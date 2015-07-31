@@ -1,6 +1,4 @@
-# [Material-UI](http://callemall.github.io/material-ui/) - Example Project
-
-This is a project that uses [Material-UI](http://callemall.github.io/material-ui/).
+# [EntTM](https://github.com/EntTM/) UI Project
 
 ## Installation
 After cloning the repository, install dependencies:
