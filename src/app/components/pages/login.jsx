@@ -76,27 +76,26 @@ let LoginPage = React.createClass({
             تبریک... شما با موفقیت ثبت نام کردید.
           </Dialog>
 
-          <ClearFix>
             <div style={styles.group}>
               <TextField
                 hintText="نام واقعی خود را وارد کنید"
-                floatingLabelText="نام و نام خانوادگی" />
+                floatingLabelText="نام و نام خانوادگی" /><br/>
               <TextField
                 hintText="نام کاربری باید یکتا باشد"
-                floatingLabelText="نام کاربری" />
+                floatingLabelText="نام کاربری" /><br/>
               <TextField
                   hintText="example@sample.com"
-                  floatingLabelText="پست الکترونیک" />
+                  floatingLabelText="پست الکترونیک" /><br/>
               <TextField
                   hintText="حداقل 8 کاراکتر"
-                  floatingLabelText="رمز عبور" /><br/>
+                  floatingLabelText="رمز عبور"
+                  type="password" /><br/>
               <RaisedButton
                   style={styles.textfield}
                   label="ثبت نام"
                   primary={true}
                   onTouchTap={this._handleSignUpTap} />
             </div>
-          </ClearFix>
         </div>
       </div>
     );

@@ -55,7 +55,7 @@ let AllActivitiesPage = React.createClass({
             avatar={<Avatar backgroundColor={Colors.green500} style={{color:Colors.green100}}>X</Avatar>}>
           </CardHeader>
           <CardText style={styles.rtl} expandable={true}>
-            <h2>انجام شده در مدت زمان: 14 روز و 21 ساعت</h2>
+            <h3>انجام شده در زمان: 14 روز و 21 ساعت</h3>
             <h3>توضیحات:</h3>
             <p>بهبود عملکرد ماژول ایگرگ در صفحه‌ی زد</p>
           </CardText>
@@ -69,7 +69,7 @@ let AllActivitiesPage = React.createClass({
             avatar={<Avatar backgroundColor={Colors.green500} style={{color:Colors.green100}}>X</Avatar>}>
           </CardHeader>
           <CardText style={styles.rtl} expandable={true}>
-            <h2>انجام شده در زمان: 2 روز و 4 ساعت</h2>
+            <h3>انجام شده در زمان: 2 روز و 4 ساعت</h3>
             <h3>توضیحات:</h3>
             <p>رفع مشکل شماره 541 در صفحه‌ی دوم سایت</p>
           </CardText>
@@ -83,7 +83,7 @@ let AllActivitiesPage = React.createClass({
             avatar={<Avatar backgroundColor={Colors.blue500} style={{color:Colors.blue100}}>W</Avatar>}>
           </CardHeader>
           <CardText style={styles.rtl} expandable={true}>
-            <h2>انجام شده در زمان: 7 روز و 1 ساعت</h2>
+            <h3>انجام شده در زمان: 7 روز و 1 ساعت</h3>
             <h3>توضیحات:</h3>
             <p>توسعه‌ی ماژول دلتا</p>
           </CardText>
@@ -97,7 +97,7 @@ let AllActivitiesPage = React.createClass({
             avatar={<Avatar backgroundColor={Colors.blue500} style={{color:Colors.blue100}}>W</Avatar>}>
           </CardHeader>
           <CardText style={styles.rtl} expandable={true}>
-            <h2>انجام شده در زمان: 21 روز و 12 ساعت</h2>
+            <h3>انجام شده در زمان: 21 روز و 12 ساعت</h3>
             <h3>توضیحات:</h3>
             <p>ساخت صفحات مربوط به ماژول تتا</p>
           </CardText>

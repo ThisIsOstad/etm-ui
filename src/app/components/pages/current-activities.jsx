@@ -64,7 +64,7 @@ let CurrentActivitiesPage = React.createClass({
             showExpandableButton={true}>
           </CardHeader>
           <CardText style={styles.rtl} expandable={true}>
-            <h2>زمان باقی‌مانده: 14 روز و 21 ساعت</h2>
+            <h3>زمان باقی‌مانده: 14 روز و 21 ساعت</h3>
             <h3>توضیحات:</h3>
             <p>بهبود عملکرد ماژول ایگرگ در صفحه‌ی زد</p>
           </CardText>
@@ -85,7 +85,7 @@ let CurrentActivitiesPage = React.createClass({
             showExpandableButton={true}>
           </CardHeader>
           <CardText style={styles.rtl} expandable={true}>
-            <h2>زمان باقی‌مانده: 2 روز و 4 ساعت</h2>
+            <h3>زمان باقی‌مانده: 2 روز و 4 ساعت</h3>
             <h3>توضیحات:</h3>
             <p>رفع مشکل شماره 541 در صفحه‌ی دوم سایت</p>
           </CardText>
@@ -106,7 +106,7 @@ let CurrentActivitiesPage = React.createClass({
             showExpandableButton={true}>
           </CardHeader>
           <CardText style={styles.rtl} expandable={true}>
-            <h2>زمان باقی‌مانده: 7 روز و 1 ساعت</h2>
+            <h3>زمان باقی‌مانده: 7 روز و 1 ساعت</h3>
             <h3>توضیحات:</h3>
             <p>توسعه‌ی ماژول دلتا</p>
           </CardText>
@@ -127,7 +127,7 @@ let CurrentActivitiesPage = React.createClass({
             showExpandableButton={true}>
           </CardHeader>
           <CardText style={styles.rtl} expandable={true}>
-            <h2>زمان باقی‌مانده: 21 روز و 12 ساعت</h2>
+            <h3>زمان باقی‌مانده: 21 روز و 12 ساعت</h3>
             <h3>توضیحات:</h3>
             <p>ساخت صفحات مربوط به ماژول تتا</p>
           </CardText>
