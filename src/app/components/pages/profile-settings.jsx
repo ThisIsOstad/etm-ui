@@ -13,25 +13,23 @@ class ListsPage extends React.Component {
 
     return (
       <div>
-        <List subheader="General">
+        <List subheader={<div style={{paddingRight:'16px'}}>تنظیمات عمومی</div>}>
           <ListItem
-            primaryText="Name"
-            secondaryText="Change your Name" />
+            primaryText="نام و نام خانوادگی"
+            secondaryText="حسین نیکپور" />
           <ListItem
-            primaryText="Username"
-            secondaryText="Change Your Username" />
+            primaryText="نام کاربری"
+            secondaryText="HosseinNikpour" />
           <ListItem
-            primaryText="Password"
-            secondaryText="Change Your Password" />
+            primaryText="رمز عبور" />
           <ListItem
-            primaryText="Profile Photo"
-            secondaryText="Change your Profile Photo" />
+            primaryText="تصویر پروفایل" />
         </List>
         <ListDivider />
-        <List subheader="Other Settings">
+        <List subheader={<div style={{paddingRight:'16px'}}>تنظیمات دیگر</div>}>
           <ListItem
-            primaryText="Unsubscribe"
-            secondaryText="Stop Using This Application" />
+            primaryText="لغو اشتراک برنامه"
+            secondaryText="تمام داده‌ها پاک خواهد شد" />
         </List>
 
       </div>

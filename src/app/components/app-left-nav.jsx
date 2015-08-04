@@ -4,13 +4,13 @@ let { MenuItem, LeftNav, Styles, Avatar } = require('material-ui');
 let { Colors, Spacing, Typography } = Styles;
 
 let menuItems = [
-  { type: MenuItem.Types.SUBHEADER, text: 'Activities' },
-  { route: 'all-activities', text: 'All Activities' },
-  { route: 'current-activities', text: 'Current Activities' },
-  { route: 'dashboard', text: 'Dashboard' },
-  { type: MenuItem.Types.SUBHEADER, text: 'Settings' },
-  { route: 'profile-settings', text: 'Profile Settings' },
-  { route: 'app-settings', text: 'Application Settings' },
+  { type: MenuItem.Types.SUBHEADER, text: 'فعالیت‌ها' },
+  { route: 'all-activities', text: 'همه‌ی فعالیت‌ها' },
+  { route: 'current-activities', text: 'فعالیت‌های جاری' },
+  { route: 'dashboard', text: 'داشبورد' },
+  { type: MenuItem.Types.SUBHEADER, text: 'تنظیمات' },
+  { route: 'profile-settings', text: 'تنظیمات پروفایل' },
+  { route: 'app-settings', text: 'تنظیمات برنامه' },
 ];
 
 class AppLeftNav extends React.Component {
@@ -25,6 +25,9 @@ class AppLeftNav extends React.Component {
 
   getStyles() {
     return {
+      containerStyle: {
+        direction: 'rtl'
+      },
       headerStyle: {
         cursor: 'pointer',
         textAlign: 'center',
@@ -51,12 +54,13 @@ class AppLeftNav extends React.Component {
     let styles = this.getStyles();
     let header = (
       <div style={styles.headerStyle} onTouchTap={this._onHeaderClick}>
-        <p style={styles.headerTextStyle}>yourEmail@sample.com</p>
+        <p style={styles.headerTextStyle}>example@sample.com</p>
       </div>
     );
 
     return (
       <LeftNav
+        style={styles.containerStyle}
         ref="leftNav"
         docked={false}
         isInitiallyOpen={false}

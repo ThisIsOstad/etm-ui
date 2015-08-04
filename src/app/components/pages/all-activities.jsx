@@ -1,10 +1,21 @@
 let React = require('react');
-let {CircularProgress, Styles} = require('material-ui');
+let {
+  Avatar,
+  Card,
+  CardActions,
+  CardExpandable,
+  CardHeader,
+  CardText,
+  CardTitle,
+  RaisedButton,
+  Snackbar,
+  Styles
+  } = require('material-ui');
 
 let ThemeManager = new Styles.ThemeManager();
 let Colors = Styles.Colors;
 
-let Main = React.createClass({
+let AllActivitiesPage = React.createClass({
 
   childContextTypes: {
     muiTheme: React.PropTypes.object
@@ -22,22 +33,87 @@ let Main = React.createClass({
     });
   },
 
+  getStyles() {
+    return {
+      containerStyle: {
+        textAlign: 'right'
+      }
+    };
+  },
+
   render() {
 
-    let containerStyle = {
-      textAlign: 'center',
-      paddingTop: '50px'
-    };
+    let styles = this.getStyles();
 
     return (
-      <div style={containerStyle}>
-        <h1>Enterprise Task Manager</h1>
-        <h2>All Activities</h2>
-        <CircularProgress mode="indeterminate"  />
+      <div style={styles.containerStyle}>
+        <Card initiallyExpanded={true}>
+          <CardHeader style={{paddingRight: '40px'}}
+            title="فعالیت اول"
+            subtitle="پروژه‌ی ایکس"
+            showExpandableButton={true}
+            avatar={<Avatar backgroundColor={Colors.green500} style={{color:Colors.green100}}>X</Avatar>}>
+          </CardHeader>
+          <CardText style={styles.rtl} expandable={true}>
+            <h2>انجام شده در مدت زمان: 14 روز و 21 ساعت</h2>
+            <h3>توضیحات:</h3>
+            <p>بهبود عملکرد ماژول ایگرگ در صفحه‌ی زد</p>
+          </CardText>
+        </Card>
+        <div style={{height:'5px'}}></div>
+        <Card initiallyExpanded={true}>
+          <CardHeader style={{paddingRight: '40px'}}
+            title="فعالیت دوم"
+            subtitle="پروژه‌ی ایکس"
+            showExpandableButton={true}
+            avatar={<Avatar backgroundColor={Colors.green500} style={{color:Colors.green100}}>X</Avatar>}>
+          </CardHeader>
+          <CardText style={styles.rtl} expandable={true}>
+            <h2>انجام شده در زمان: 2 روز و 4 ساعت</h2>
+            <h3>توضیحات:</h3>
+            <p>رفع مشکل شماره 541 در صفحه‌ی دوم سایت</p>
+          </CardText>
+        </Card>
+        <div style={{height:'5px'}}></div>
+        <Card initiallyExpanded={true}>
+          <CardHeader style={{paddingRight: '40px'}}
+            title="فعالیت سوم"
+            subtitle="پروژه‌ی شرکت دبلیو"
+            showExpandableButton={true}
+            avatar={<Avatar backgroundColor={Colors.blue500} style={{color:Colors.blue100}}>W</Avatar>}>
+          </CardHeader>
+          <CardText style={styles.rtl} expandable={true}>
+            <h2>انجام شده در زمان: 7 روز و 1 ساعت</h2>
+            <h3>توضیحات:</h3>
+            <p>توسعه‌ی ماژول دلتا</p>
+          </CardText>
+        </Card>
+        <div style={{height:'5px'}}></div>
+        <Card initiallyExpanded={true}>
+          <CardHeader style={{paddingRight: '40px'}}
+            title="فعالیت چهارم"
+            subtitle="پروژه‌ی شرکت دبلیو"
+            showExpandableButton={true}
+            avatar={<Avatar backgroundColor={Colors.blue500} style={{color:Colors.blue100}}>W</Avatar>}>
+          </CardHeader>
+          <CardText style={styles.rtl} expandable={true}>
+            <h2>انجام شده در زمان: 21 روز و 12 ساعت</h2>
+            <h3>توضیحات:</h3>
+            <p>ساخت صفحات مربوط به ماژول تتا</p>
+          </CardText>
+        </Card>
       </div>
     );
   },
 
+  _handleJobDone() {
+    this.refs.snackbar.show();
+  },
+
+  _handleSnackbarAction() {
+    this.refs.snackbar.dismiss();
+  }
+
 });
 
-module.exports = Main;
+module.exports = AllActivitiesPage;

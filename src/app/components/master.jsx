@@ -37,7 +37,8 @@ class Master extends React.Component {
         color: darkWhite
       },
       containerStyle: {
-        paddingTop: '64px'
+        paddingTop: '64px',
+        direction: 'rtl'
       }
     };
   }
@@ -45,11 +46,11 @@ class Master extends React.Component {
   render() {
     let styles = this.getStyles();
     let title =
-      this.context.router.isActive('current-activities') ? 'Current Activities' :
-      this.context.router.isActive('all-activities') ? 'All Activities' :
-      this.context.router.isActive('dashboard') ? 'Dashboard' :
-      this.context.router.isActive('profile-settings') ? 'Profile Settings' :
-      this.context.router.isActive('app-settings') ? 'Settings' : 'Login'
+      this.context.router.isActive('current-activities') ? 'فعالیت‌های جاری' :
+      this.context.router.isActive('all-activities') ? 'همه‌ی فعالیت‌ها' :
+      this.context.router.isActive('dashboard') ? 'داشبورد' :
+      this.context.router.isActive('profile-settings') ? 'تنظیمات پروفایل' :
+      this.context.router.isActive('app-settings') ? 'تنظیمات' : 'ثبت نام'
 
     return (
       <AppCanvas>

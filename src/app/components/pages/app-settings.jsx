@@ -13,17 +13,17 @@ class ListsPage extends React.Component {
 
     return (
       <div>
-        <List subheader="General">
+        <List subheader={<div style={{paddingRight:'16px'}}>تنظیمات عمومی</div>}>
           <ListItem
-            primaryText="Theme"
-            secondaryText="Change Theme" />
+            primaryText="تم برنامه"
+            secondaryText="تغییر تم کنونی" />
         </List>
         <ListDivider />
-        <List subheader="Other Settings">
+        <List subheader={<div style={{paddingRight:'16px'}}>تنظیمات دیگر</div>}>
           <ListItem
               leftCheckbox={<Checkbox />}
-              primaryText="Notificaitons"
-              secondaryText="Allow notifications" />
+              primaryText="اعلان‌ها"
+              secondaryText="فعالسازی اعلان‌ها" />
         </List>
 
       </div>

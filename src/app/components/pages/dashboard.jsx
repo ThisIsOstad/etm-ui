@@ -1,12 +1,10 @@
-/** In this file, we create a React component which incorporates components provided by material-ui */
-
 let React = require('react');
 let {CircularProgress, Styles} = require('material-ui');
 
 let ThemeManager = new Styles.ThemeManager();
 let Colors = Styles.Colors;
 
-let Main = React.createClass({
+let DashboardPage = React.createClass({
 
   childContextTypes: {
     muiTheme: React.PropTypes.object
@@ -42,4 +40,4 @@ let Main = React.createClass({
 
 });
 
-module.exports = Main;
+module.exports = DashboardPage;
